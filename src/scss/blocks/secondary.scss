@@ -1,0 +1,92 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.secondary {
+  padding-top: 1.5rem;
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    width: 1440px;
+  }
+  &__pattern {
+    display: none;
+    @include responsive(laptop) {
+      display: block;
+      position: relative;
+      right: 4rem;
+      padding-top: 5.7rem;
+    }
+  }
+  &__images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    @include responsive(laptop) {
+      position: relative;
+      right: 5rem;
+    }
+  }
+  &__phoneimage {
+    height: 193px;
+    margin-left: -0.5rem;
+    border-radius: 10px;
+    position: relative;
+    &::after {
+      @include pseudo(100%, 100%);
+      height: 193px;
+      width: 115px;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      background-color: #f16718;
+      opacity: 0.5;
+      @include responsive(laptop) {
+        top: 0rem;
+        left: -0.5rem;
+        height: 420px;
+        width: 272px;
+      }
+    }
+    @include responsive(laptop) {
+      height: 420px;
+    }
+  }
+  &__glassimage {
+    height: 193px;
+    border-radius: 10px;
+    @include responsive(laptop) {
+      height: 420px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    @include responsive(laptop) {
+      width: 265px;
+      text-align: left;
+      padding: 0;
+      padding-right: 1rem;
+      margin-left: -3rem;
+    }
+  }
+  &__title {
+    margin-top: 4rem;
+    color: #162542;
+    font-size: 2rem;
+    @include responsive(laptop) {
+      font-size: 1.8rem;
+    }
+  }
+  &__text {
+    color: #7b8bad;
+    font-size: 1.1rem;
+    margin-top: 0;
+    @include responsive(laptop) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,4 +1,9 @@
-@use 'base/normalize.scss';
-@use 'base/initial-reset.scss';
-@use 'config/variables.scss';
-@use 'blocks/body.scss';
+@use "base/normalize.scss";
+@use "base/initial-reset.scss";
+@use "config/variables.scss";
+@use "blocks/body.scss";
+@use "blocks/header.scss";
+@use "blocks/portal.scss";
+@use "blocks/secondary.scss";
+@use "blocks/card.scss";
+@use "blocks/footer.scss";

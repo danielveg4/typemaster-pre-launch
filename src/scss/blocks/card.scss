@@ -1,0 +1,43 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  @include responsive(laptop) {
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 1440px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  @include responsive(laptop) {
+    text-align: left;
+    align-items: start;
+    padding: 1rem;
+  }
+  &__icon {
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: flex;
+    height: 58px;
+    width: 58px;
+    background-color: #f16718;
+  }
+  &__title {
+    color: #162542;
+    font-size: 2rem;
+  }
+  &__text {
+    color: #7b8bad;
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+}

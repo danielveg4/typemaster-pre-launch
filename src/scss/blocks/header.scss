@@ -1,1 +1,37 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  @include responsive(laptop) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 1440px;
+  }
+
+  &__logo {
+    height: 40px;
+  }
+  &__button {
+    background-color: bisque;
+    height: 40px;
+    width: 150px;
+    color: #162542;
+    background-color: #e8eff2;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 0.8rem;
+  }
+}

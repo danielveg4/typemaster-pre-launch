@@ -1,1 +1,16 @@
-/* ESTILOS DEL FOOTER */
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.footer {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+
+  &__type {
+    color: #7b8bad;
+    font-weight: bold;
+  }
+  &__copy {
+    color: #7b8bad;
+  }
+}

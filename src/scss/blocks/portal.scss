@@ -1,0 +1,77 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+
+.portal {
+  display: flex;
+  flex-direction: column;
+  @include responsive(laptop) {
+    padding-top: 2rem;
+    margin-left: 9rem;
+    flex-direction: row;
+    width: 1440px;
+  }
+  &__content {
+    padding: 1rem;
+    @include responsive(laptop) {
+      width: 500px;
+      padding-top: 1rem;
+      margin-right: 4rem;
+    }
+  }
+  &__title {
+    color: #162542;
+    font-size: 3rem;
+  }
+  &__text {
+    color: #7b8bad;
+    font-size: 1.1rem;
+    padding-top: -1rem;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include responsive(laptop) {
+      padding-top: 3rem;
+    }
+  }
+  &__button {
+    width: 160px;
+    height: 40px;
+    background-color: #f16718;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 0.75rem;
+  }
+  &__buttonR {
+    width: 160px;
+    color: #7b8bad;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 0.75rem;
+  }
+  &__image {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 10px;
+
+    @include responsive(laptop) {
+      width: 580px;
+    }
+  }
+  &__pattern {
+    display: none;
+    @include responsive(laptop) {
+      display: block;
+      position: relative;
+      left: 1rem;
+      padding-top: 0.5rem;
+    }
+  }
+}
