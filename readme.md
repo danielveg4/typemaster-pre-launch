@@ -1,6 +1,6 @@
 # Título del proyecto
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/danielveg4/typemaster-pre-launch/blob/main/Captura%20de%20Pantalla%202023-05-09%20a%20las%2018.11.35.png?raw=true)
 
 ## Ejemplo en vivo
 
@@ -22,7 +22,7 @@ En esta página se convinan diferentes diseños, a partir de tecnologias HTML, C
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://github.com/danielveg4/typemaster-pre-launch/blob/main/Captura%20de%20Pantalla%202023-05-09%20a%20las%2018.11.51.png?raw=true)
 
 ## Autor ✒️
 
